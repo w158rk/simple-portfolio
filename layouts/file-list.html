@@ -1,0 +1,17 @@
+<h1>File List</h1>
+<hr>
+<div class="files-list fade-in">
+  <% data.files.forEach(function(file) { %>
+    <div class="file fade-in">
+      <a class="file-title" href="<%= file.url %>">
+        <h2 class="file-title">
+          <%= file.title %>
+        </h2>
+      </a>
+      <div class="file-content">
+        <%= file.body %>
+      </div>
+    </div>
+  <% }) %>
+</div>
+

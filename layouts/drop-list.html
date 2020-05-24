@@ -1,0 +1,23 @@
+<h1>Drop List</h1>
+<hr>
+<div class="blog-drops-list fade-in">
+  <% data.drops.forEach(function(drop) { %>
+    <% if(!drop.draft) { %>
+      <div class="blog-drop">
+        <a href="<%= drop.permalink %>">
+          <h2 class="blog-drop-title"><%= drop.title %></h2>
+        </a>
+        <% if(drop.date) { %>
+          <p class="blog-drop-meta"><%= drop.date %> 
+            <% if(drop.author) { %>
+              by <%= drop.author %>
+            <% } %>
+          </p>
+        <% } %>
+        <% if(drop.excerpt) { %>
+          <p><%= drop.excerpt %></p>
+        <% } %>
+      </div>
+    <% } %>
+  <% }) %>
+</div>

@@ -1,0 +1,20 @@
+<div class="blog-drop fade-in">
+  <h2 class="blog-drop-title"><%= data.title %></h2>
+  <% if(data.date) { %>
+    <p class="blog-drop-meta"><%= data.date %> by <a href="#"><%= data.author %></a></p>
+  <% } %>
+  <div class="blog-drop-tags pb-4">
+    <% if(data.tags) { %>
+      <% data.tags.forEach(function(tag) { %>
+        <% if(tag) { %>
+          <a href="#/drops?tag=<%= tag %>">
+            <button type="button" class="btn btn-primary btn-sm">
+              <%= tag %>
+            </button>
+          </a>
+        <% } %>
+      <% }) %>
+    <% } %>
+  </div>
+  <%= data.body %>
+</div>

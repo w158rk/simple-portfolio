@@ -1,0 +1,21 @@
+body {
+  padding-top: 2rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+}
+
+div.code {
+  padding: .2em .4em;
+  margin: 0;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+code {
+  font-size: 85%;
+  color: black;
+}
+.inline {
+  background-color: rgba(27,31,35,.05);
+}
